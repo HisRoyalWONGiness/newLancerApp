@@ -29,10 +29,12 @@ li {
     margin-left: 17.2%;
 }
 button {
+   /* float: left;*/
     width: 120px;
     background: #ffffff;
     border: none;
     height: 100%;
+   /* border-right: 2px solid rgba(196, 196, 196, 0.4);*/
 }
 #container div {
     border: 1px solid black;
@@ -53,6 +55,17 @@ button {
     text-align: center;
     align-items: center;
     cursor: pointer;
+}
+
+header {
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    overflow: hidden;
+    height: 80px;
+    padding: 5px;
+    border-bottom: 4px solid;
+    border-bottom-color: rgba(196, 196, 196, 0.4);   
 }
 .cEstimate { 
     margin: 0 auto;
@@ -85,7 +98,23 @@ div > #ext{
     color: white;
     width: 100%;
     height: 50px;
+}/*
+.cree {
+    width: 80%;
+    float: left;
+    margin: 10px;
+    border: 1px solid #999999;
+    min-height: 300px;
+    padding: 30px;
+}*/
+
+/*.cree:focus,
+.cree:focus-within {
+    border: 4px solid #999999;
 }
+#creefocu, #cree:focus-within{
+    border: 4px solid #0ABAB5;
+}*/
  .a-next {
     background: rgba(207, 204, 204, 0.4);
     width: 220px;
@@ -141,6 +170,7 @@ h5 {
     background: #ffffff;
     border: 1px solid rgba(145, 145, 145, 0.4);
     color: #091429;
+
 }
 .project {
     border: 2px solid rgba(145, 145, 145, 0.4);
@@ -162,6 +192,7 @@ h5 {
 .req {
      margin-left: 221px; 
      margin-top: 12rem;
+
     float: right;
 }
 .signup {
@@ -193,6 +224,7 @@ li a {
     margin: 1px;
     padding: 1px;
     color: black;
+
 }
 
 #new_user {
@@ -222,6 +254,7 @@ li a {
 #container {
     display: grid;
     grid-template-columns: 1fr 8fr 2fr;
+
 }
 option, select{
     font-size: 14px;
@@ -232,16 +265,15 @@ option, select{
 #clear{
     padding: auto;
 }
+
+
+
  #ext {
     justify-content: center;
     border: none;
     background: #0ABAB5 !important;
     color: white;
     border: none !important;
-}
-.row {
-    margin-right: 0;
-    margin-left: -15px;
 }
 
 
@@ -314,6 +346,7 @@ option, select{
     height: 20px;
 }
 
+
 }
 
 
@@ -331,10 +364,10 @@ option, select{
     margin-top: 5px;
 }
 .a-next {
-    width: 160px;
-    height: 55px;
-    padding: 5px 15px;
-    font-size: 18px;
+    width: 180px;
+    height: 60px;
+    padding: 5px 20px;
+    font-size: 20px;
     margin-top: 60px;
     margin-bottom: 100px;
 }
@@ -343,7 +376,7 @@ option, select{
     min-height: 28vh;
     margin-bottom: 30px;
     max-width: 85%;
-    margin-left: 7%;
+    margin-left: 5%;
 }
 .card-body:hover {
     border: 2px solid black;
@@ -351,8 +384,8 @@ option, select{
 .dropbtn, .project {
      margin-top: 1vh; 
     height: 40px;
-    padding: 0;
-    width: 72vw !important;
+    padding: 10px;
+    width: 70vw !important;
 }
 .project {
     border: 1.5px solid rgba(145, 145, 145, 0.4);
@@ -361,7 +394,7 @@ option, select{
 .l-proj {
     font-size: 14px;
     width: 100%;
-    margin: .5rem 0 0 .3rem;
+    margin-bottom: 2rem;
 }
 .l-proj::placeholder {
     line-height: 10px;
@@ -374,84 +407,6 @@ option, select{
 }
 #container .navM img {
     height: 20px;
-}
-#container p {
-    font-size: 17.5px;
-    margin-top: 12px;
-}
-div > #ext {
-    font-size: 18px;
-}
-#container .navM img {
-    height: 18px;
-}
-
-}
-
-
-@media (max-width: 576px) 
-{
-.h1, h1 {
-    font-size: 1.15rem !important;
-}
-#container p {
-    margin-top: 0x;
-}
-.a-next {
-    width: 120px;
-    height: 45px;
-    padding: 5px 10px;
-    font-size: 15px;
-    margin-top: 25px;
-    margin-bottom: 110px;
-}
-.h5, h5 {
-    font-size: 1rem;
-}
-  .card
-  {
-    min-height: 25vh;
-}
-p.card-text {
-    font-size: .78rem;
-    padding-right: .5rem;
-}
-.card-body:hover {
-    border: 1px solid black;
-}
-.dropbtn, .project {
-     margin-top: 0; 
-    height: 35px;
-    padding: 0;
-    width: 70vw !important;
-}
-.project {
-    border: .5px solid rgba(145, 145, 145, 0.4);
-}
-.l-proj {
-    font-size: 12px;
-}
-.box {
-    margin-top: 2%;
-}
-option, select{
-    font-size: 12px;
-}
-#container .navM img {
-    height: 20px;
-}
-#container p {
-    font-size: 16px;
-    margin-top: 12px;
-}
-div > #ext {
-    font-size: 15px;
-}
-#container .navM img {
-    height: 14px;
-}
-button {
-    width: 70px;
 }
 
 }
