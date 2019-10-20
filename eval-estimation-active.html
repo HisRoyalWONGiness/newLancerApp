@@ -47,7 +47,7 @@
 
 .cnc {
   border: none;
-  background: #e4e4e4;
+  background: #0ABAB5;
   height: 50px;
   width: 100%;
   color: white;
@@ -150,6 +150,13 @@ i input {
   width: 90%;
 }
 
+.hour {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
 #currency {
   font-family: Ubuntu;
   font-style: normal;
@@ -158,8 +165,13 @@ i input {
   line-height: 28px;
   color: #262626;
   padding-bottom: 20px;
+  
 }
 
+#currency p{
+float: right;
+padding-right: 10px;
+}
 select {
   border: none;
   border-bottom: 1px solid;
@@ -167,7 +179,7 @@ select {
 
 .btn {
   border: 1px solid #e4e4e4;
-  background: #e4e4e4;
+  background: #0ABAB5;
   margin-top: 40px;
   margin-left: 30%;
   width: 40%;
@@ -246,7 +258,7 @@ input {
     </div>
 
     <div class="">
-      <input class="text-center cnc" value="NEXT" type="button">
+      <input class="text-center cnc" value="SETUP THIS PROJECT" type="button">
     </div>
 
 
@@ -276,21 +288,21 @@ input {
         <div class="hour">
           <p>How long (in hours) will it take you to complete this project?</p>
 
-          <input type="text" name="estTime" placeholder="Hours" />
+          <input type="text" name="estTime" placeholder="16 Hours" />
         </div>
         <div class="hour">
 
           <p>How much (in hours) do you charge per hour?</p>
-          <input type="text" name="estPrice" placeholder="NGN 0.00" />
+          <input type="text" name="estPrice" placeholder="USD 4.00" />
         </div>
 
 
 
         <div class="hours">
           <p>Project starts/ends</p>
-          <i class="fa fa-calendar start"><input type="text" onfocus="(this.type='date')" name="estStartDate"
+          <i class="fa fa-calendar start"><input type="text" placeholder="Set start date" onfocus="(this.type='date')" name="estStartDate"
               placeholder=" Set start date" /></i>
-          <i class="fa fa-calendar end"><input type="text" onfocus="(this.type='date')" name="estEndDate"
+          <i class="fa fa-calendar end"><input type="text" placeholder="Set end date" onfocus="(this.type='date')" name="estEndDate"
               placeholder="Set end date" /></i>
 
         </div>
@@ -305,18 +317,18 @@ input {
             How much would it cost you to power your devices or equipment for this
             project?
           </p>
-          <input type="text" name="est1" id="est1" placeholder="NGN 0.00" />
+          <input type="text" name="est1" id="est1" placeholder="USD 450" />
         </div>
 
 
         <div class="hour">
           <p id="sub">Are you subcontracting to anyone?</p>
-          <input type="text" name="est2" id="est2" placeholder="E.g. Illustrator, Consulting..." class="sub"/>
+          <input type="text" name="est2" id="est2" placeholder="Copywriter" class="sub"/>
         </div><br />
 
         <div class="hour">
           <p id="pay">How much would they be paid?</p>
-          <input type="text" name="est3" id="est3" placeholder="NGN 0.00" />
+          <input type="text" name="est3" id="est3" placeholder="USD 900" />
         </div>
       </div>
       <br>
@@ -325,22 +337,23 @@ input {
 
         <div class="hour">
           <p id="proj">How many similar projects have<br>you done before?</p>
-          <input type="text" name="exp1" id="exp1">
+          <input type="text" placeholder="2" name="exp1" id="exp1">
 
         </div>
 
 
         <div class="hour">
           <p id="rate">Out of 5 how would you rate your<br>experience level in executing this <i class="fa fa-question-circle" aria-hidden="true"></i><br>project?<p>
-              <input type="text" name="exp2" id="exp2"> /5
+              <input type="text" placeholder="3" name="exp2" id="exp2"> /5
         </div>
 
       </div>
       <hr />
 
 
-      <div id="currency">
+      <div id="currency" >
         Currency:<select>
+                <option selected = "USD">USD</option>
           <option>NGN</option>
           <option>AED</option>
           <option>AFN</option>
@@ -377,15 +390,17 @@ input {
           <option>CRC</option>
           <option>CUC</option>
         </select>
-
+<p>Estimate: 8,880.00 USD</p>
       </div>
+
+      
 
 
 
     </div class="nex">
 
 
-      <button class="btn">NEXT</button>
+      <button class="btn">SETUP THIS PROJECT</button>
     </div>
 
   </div>

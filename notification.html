@@ -7,29 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Notifications</title>
-
+    <link rel="shortcut icon" href="https://res.cloudinary.com/ddu0ww15f/image/upload/v1571417665/icons8-estimates-16_adktgw.png" type="image/x-icon">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <!-- <link rel="stylesheet" href="style/project.css"> -->
     <style type="text/css">
         /*Main page style by message*/
-
         @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
         :root{
             --primary-color: #091429;
             --secondary-color: #0ABAB5;
             --dark-color: #262626;
             --light-color: #B1B1B1;
         }
-
-
            /****************************/
           /*------- main styles ------*/
          /****************************/
-
-
         .text-primary{
             color: var(--primary-color) !important;
         }
@@ -103,7 +97,6 @@
             border-color: inherit !important;
             opacity: 0.8 !important;
         }
-
         /*------Nav bar---------*/
         a,
         a:hover,
@@ -137,16 +130,13 @@
           border-bottom: 1px dashed #ddd;
           margin: 40px 0;
         }
-
         .notify{
             color: blue;
             width: 20px;
             height: 20px;
            
         }
-
         .wrapper #content{
-
         }
         /* ---------------------------------------------------
             SIDEBAR STYLE
@@ -246,8 +236,8 @@
         .notification-case{
             margin: 5vw;
             margin-top: 4vw;
+            font-family: Open Sans;
         }
-
         .notification-box img {
             margin: 10px;
             margin-left: 20px;
@@ -261,17 +251,16 @@
             border: 1px solid #C4C4C4;
             margin-bottom: 15px;
             margin-right: 20px;
+            font-family: Open Sans;
         }
-
         h1 {
             font-style: normal;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 12px;
             margin-bottom: 20px;
             margin-top: 24px;
             
         }
-
         .float .my-float{
             font-size: 25px;
             line-height: 20px;
@@ -279,15 +268,12 @@
             margin-top: 50px;
             text-decoration: none;
         }
-
-
         #add-something{
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 12;
           }
-
         #content {
           width: 100%;
           min-height: 100vh;
@@ -323,22 +309,18 @@
           opacity: 1;
           margin: 5px auto;
         }
-
         .alert.alert-primary.py-0.px-2.small.m-0.pending{
             color: #F67A06;
             font-weight: bold;
             background-color: rgba(201, 133, 70,0.3);
             border-color: rgba(201, 133, 70,0.3);
         }
-
         .alert.alert-primary.py-0.px-2.small.m-0.active{
             color: #179615;
             font-weight: bold;
             background-color: #76D874;
             border-color:  #76D874;
         }
-
-
         .container-fluid .input-group{
             margin-left: 400px;
             width: 350px;
@@ -347,10 +329,7 @@
         .container-fluid .mydrop-down {
             width: 300px;
         }
-
        
-
-
         /* ---------------------------------------------------
             MEDIAQUERIES
         ----------------------------------------------------- */
@@ -359,7 +338,6 @@
             margin-left: -220px;
             transform: rotateY(90deg);
           }
-
           #sidebarCollapse {
             width: 40px;
             height: 40px;
@@ -367,7 +345,6 @@
             cursor: pointer;
             display:block;
           }
-
           #sidebar.active {
             margin-left: 0;
             transform: none;
@@ -391,26 +368,20 @@
           #sidebarCollapse.active span:last-of-type {
             transform: rotate(-45deg) translate(1px, -1px);
           }
-
           .container-fluid .input-group{
             margin-left: -20px;
             width: 220px;
             }
-
           .container-fluid .mydrop-down {
             width: 100%;
             }
-
           .container-fluid .mydrop-down {
             width: 100%;
             }
-
             .container-fluid{
                 margin-left: 40px;
             }
         }
-
-
         @media (max-width: 533px) {
             #sidebar {
               margin-left: -220px;
@@ -463,7 +434,6 @@
                   margin-left: -40px;
               }
           }
-
           @media (max-width: 1024px) {
             #sidebar {
               margin-left: -220px;
@@ -506,7 +476,6 @@
                 margin-left: 0px;
                
                 }
-
             .container-fluid .input-group{
               margin-left: 60px;
               width: 150px;
@@ -520,7 +489,6 @@
               width: 100%;
               }
           }
-
              
           
   
@@ -532,27 +500,22 @@
           border-collapse:separate; 
           border-spacing: 0 1em;
         }
-
         table.project-table tbody tr{
           padding-bottom: 10px !important;
           width: 100px;
         }
-
         table.project-table tbody tr td span.text-small{
           font-size: 8px;
         } 
-
         table.project-table tbody tr td, table.project-table thead tr th {
             max-width: 200px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-
         .dropleft .dropdown-toggle::before{
           display: none;
         }
-
         /*------------floating button---------*/
         #add-something{
           position: fixed;
@@ -584,7 +547,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="project.html" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="https://lancer-app.000webhostapp.com/images/svg/lightbulb.svg" height="20" width="auto"> <span> Projects</span></a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><img src="https://lancer-app.000webhostapp.com/images/svg/lightbulb.svg" height="20" width="auto"> <span> Project</span></a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#" class="pl-4">Status</a>
@@ -593,10 +556,10 @@
                             <a href="#" class="pl-4">Overview</a>
                         </li>
                         <li>
-                            <a href="#" class="pl-4 ">Collabrators</a>
+                            <a href="collaborator.html" class="pl-4 ">Collabrators</a>
                         </li>
                         <li>
-                            <a href="#" class="pl-4">Task</a>
+                            <a href="task.html" class="pl-4">Task</a>
                         </li>
                         <li>
                             <a href="#" class="pl-4"> Documents</a>
@@ -725,7 +688,6 @@
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
-
             const searchBox = document.querySelector('.searchBox');
             const status = document.querySelector('.status');
             const filterNames =()=>{
@@ -740,7 +702,6 @@
                     }
                 })
             }
-
             const filterStatus =()=>{
                 const statusText = document.querySelectorAll('.alert-primary')
                 
@@ -756,9 +717,7 @@
                      }
                 })  
             }
-
             searchBox.addEventListener('keyup', filterNames);
-
             status.addEventListener('change', filterStatus);
                
         });
@@ -770,20 +729,16 @@
 		  document.getElementById("mySidebar").style.width = "200px";
 		  
 		}
-
 		function closeNav() {
 		  document.getElementById("mySidebar").style.width = "0";
 		}
-
 		const w = window.innerWidth
 		let y = document.getElementById('main');
-
 		window.onclick = function(event) {
 		    if (event.target == y && w <= 710) {
 		     closeNav()
 		 }
 		}
-
 	</script>
 
 </body>
